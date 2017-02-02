@@ -1,4 +1,4 @@
-module MSpec
+module RSpec
   module Matchers
 
     def self.define(*args)

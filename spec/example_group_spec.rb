@@ -1,4 +1,4 @@
-describe MSpec::ExampleGroup do
+describe RSpec::ExampleGroup do
   subject{ described_class.new("test"){} }
 
   it "allows a subject to be set" do

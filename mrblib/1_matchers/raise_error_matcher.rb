@@ -1,4 +1,4 @@
-module MSpec
+module RSpec
   module Matchers
     class RaiseErrorMatcher < BaseMatcher
       def initialize(expected_error_or_message=nil, expected_message=nil)

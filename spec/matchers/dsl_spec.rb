@@ -1,4 +1,4 @@
-describe MSpec::Matchers do
+describe RSpec::Matchers do
   # @see https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
   describe "Built in matchers" do
 

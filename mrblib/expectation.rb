@@ -1,4 +1,4 @@
-module MSpec
+module RSpec
 
   class Expectation
     Positive = 'Expected to'

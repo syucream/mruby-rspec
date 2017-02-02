@@ -1,8 +1,8 @@
-MRuby::Gem::Specification.new('mruby-spec') do |spec|
+MRuby::Gem::Specification.new('mruby-rspec') do |spec|
   spec.license = 'MIT'
-  spec.author  = 'Seba Gamboa'
-  spec.summary = %q{Behaviour Driven Development for MRuby.}
-  spec.version = '0.1.0'
+  spec.author  = 'Ryo Okubo'
+  spec.summary = %q{rspec for mruby}
+  spec.version = '0.0.1'
 
   spec.test_rbfiles = Dir.glob("#{dir}/spec/**/*_spec.rb")
 

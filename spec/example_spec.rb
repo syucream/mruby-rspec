@@ -1,4 +1,4 @@
-describe MSpec::Example do
+describe RSpec::Example do
   describe "#subject" do
     subject { "subject" }
 
@@ -14,7 +14,7 @@ describe MSpec::Example do
 
   describe "#described_class" do
     it "is available" do
-      expect(described_class).to be MSpec::Example
+      expect(described_class).to be RSpec::Example
     end
 
     describe(String) do

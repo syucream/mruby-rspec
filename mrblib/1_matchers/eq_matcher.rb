@@ -1,4 +1,4 @@
-module MSpec
+module RSpec
   module Matchers
     class EqMatcher < BaseMatcher
 

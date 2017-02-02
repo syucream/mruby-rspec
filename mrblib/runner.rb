@@ -1,4 +1,4 @@
-module MSpec
+module RSpec
 
   # Wrapper around MRuby's test framework
   module Runner
@@ -38,4 +38,4 @@ module MSpec
 
 end
 
-MSpec::Runner.setup(self)
+RSpec::Runner.setup(self)

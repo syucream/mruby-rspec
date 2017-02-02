@@ -1,4 +1,4 @@
-module MSpec
+module RSpec
   class ExampleGroup
     attr_reader :target
 

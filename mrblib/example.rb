@@ -1,6 +1,6 @@
-module MSpec
+module RSpec
   class Example
-    include MSpec::Matchers::DSL
+    include RSpec::Matchers::DSL
 
     PENDING = -> { raise MRubyTestSkip, "(Not implemented)" }
     def initialize(group,description,&block)

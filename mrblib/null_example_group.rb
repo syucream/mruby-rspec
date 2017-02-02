@@ -1,4 +1,4 @@
-module MSpec
+module RSpec
 
   # Null object to handle example group parents chain
   class NullExampleGroup
