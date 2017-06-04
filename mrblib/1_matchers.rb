@@ -1,8 +1,8 @@
 module RSpec
   module Matchers
 
-    def self.define(*args)
-      DSL.define(*args)
+    def self.define(*args, &block)
+      DSL.define(*args, &block)
     end
 
   end
