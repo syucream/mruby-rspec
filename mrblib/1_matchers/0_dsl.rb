@@ -3,9 +3,18 @@ module RSpec
     module DSL
       MISING_PREFIXES = []
 
-      def self.define(name, klass=nil, &definition)
-        define_method name do |*expected|
-          klass.new(*expected)
+      def self.define(name, klass=nil, &block)
+        if !klass.nil?
+          define_method name do |*expected|
+            klass.new(*expected)
+          end
+        elsif block_given?
+          define_method name do |*expected|
+            block.call(*expected)
+          end
+        else
+          # NOTE unexpected call
+          exit
         end
       end
 
