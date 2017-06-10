@@ -1,6 +1,10 @@
 MRuby::Gem::Specification.new('mruby-rspec') do |spec|
   spec.license = 'MIT'
-  spec.author  = 'Ryo Okubo'
+  spec.authors = [
+    'Seba Gamboa',
+    'mruby developers',
+    'Ryo Okubo'
+  ]
   spec.summary = %q{rspec for mruby}
   spec.version = '0.0.1'
 
