@@ -9,9 +9,7 @@ module RSpec
             klass.new(*expected)
           end
         elsif block_given?
-          define_method name do |*expected|
-            block.call(*expected)
-          end
+          define_by_block(name, &block)
         else
           # NOTE unexpected call
           exit
@@ -31,6 +29,16 @@ module RSpec
         end
 
         super
+      end
+
+      private
+
+      def self.define_by_block(name, &block)
+        define_method name do |*expected|
+          klass = RSpec::Matchers::BaseMatcher
+          klass.class_eval(&block)
+          klass.new
+        end
       end
     end
   end

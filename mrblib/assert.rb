@@ -67,6 +67,7 @@ def assert(str = 'Assertion failed', iso = '')
     else
       $asserts.push(assertion_string("#{e.class}: ", str, iso, e, bt))
       $kill_test += 1
+      p e
       t_print('X')
   end
   ensure
