@@ -10,6 +10,9 @@ MRuby::Gem::Specification.new('mruby-rspec') do |spec|
 
   spec.test_rbfiles = Dir.glob("#{dir}/spec/**/*_spec.rb")
 
+  # Required for #send method
+  spec.add_dependency('mruby-metaprog', :core => 'mruby-metaprog')
+
   # Required to print test errors
   spec.add_dependency('mruby-print', :core => 'mruby-print')
 end
