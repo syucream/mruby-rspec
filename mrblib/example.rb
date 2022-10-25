@@ -2,16 +2,19 @@ module RSpec
   class Example
     include RSpec::Matchers::DSL
 
-    PENDING = -> { raise MRubyTestSkip, "(Not implemented)" }
     def initialize(group,description,&block)
       @group = group
       @description = description
-      @block = block || PENDING
+      @block = block
     end
 
     # Executes the example Proc
     def execute
-      instance_eval(&@block)
+      if @block
+        instance_eval(&@block)
+      else
+        raise MRubyTestSkip, "(Not implemented)"
+      end
     end
 
     # The example full description
